@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SORSOGON BEST SPOTS</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+ <!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">HOME</a>
+  <a href="#">ABOUT</a>
+  <a href="#">SERVICES</a>
+  <a href="#">CONTACT</a>
+</div>
+
+<!-- Note -->
+
+  <h4 style="text-align:center"></h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <img src="images/intro image.jpg" alt="My Website Header">
+  </div>
+
+  2>Bank Calculator App</h2>
+  <p>Click the button Start</p>
+  <p id="result"></p>
+  <button onclick="ComputeBalance()">Input Bank Balance</button>
+  <script>
+      //Execute this function when the button is clicked
+      function ComputeBalance(){
+          const RATE = 6.9;
+          alert("This script will calculate your final balance" +
+              " after an interest rate is applied.");
+          
+          // Corrected to parseFloat to properly convert input to a number
+          let deposit = parseFloat(prompt('Enter the amount of your deposit', ''));
+          
+          if (isNaN(deposit)) {
+              alert("Please enter a valid number.");
+              return;
+          }
+          
+          let newbalance = 0.00;
+          newbalance = deposit + deposit * (RATE / 100);
+
+          // Apply decimal formatting
+          var newbalanceFormatted = newbalance.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+          // Display the message with correct spacing
+          alert("In one year, that deposit will grow to\n" +
+              newbalanceFormatted + ", an amount worth waiting for."
+          );
+      }
+  </script>
+</body>
+</html>
+
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>BARCELONA</h2>
+    <h5></h5>
+    
+    <img src="images/BARCELONA.jpg" alt="">
+    <p>The site of Barcelona was originally part of Gubat and Bulusan.
+         The town's name was known as Danlog, taken from the name of a local river.
+         The change of name to Barcelona was recommended by a Spanish official who saw some similarities with Barcelona, Catalonia (Spain).
+         On April 16, 1886, it became a pueblo civil. Until 1868, it was part of the parish of St. James the Great of Bulusan.
+         After 1868, it took St. Joseph as its patron saint and celebrates their town fiesta on May 19. 
+         Barcelona, officially the Municipality of Barcelona (Waray Sorsogon: Bungto san Barcelona; Waray: Bungto han Barcelona, Tagalog: Bayan ng Barcelona),
+         is a 5th class municipality in the province of Sorsogon, Philippines. According to the 2020 census, it has a population of 20,987 people.[3]
+
+         It is bounded by Gubat in the north, Bulusan in the south, Casiguran in the west and Philippine Sea in the east.</p>
+    <h3>TANGKE SPRING</h3>
+    <p>Isang natatagong paraiso sa Juban, Sorsogon!
+         Sa halagang 20 pesos na entrance fee ay makakaligo kana dito sa malinaw at malinis na spring na ito..</p>
+    <img src="images/TANGKE.jpg" alt="">
+    <img src="images/BULUSAN LAKE.jpg" alt="">
+  </div>
+  <div class="main">
+    <h2>ROMPEOLAS</h2>
+    <h5></h5>
+    <img src="images/rompeolas.jpg" alt="">
+    <p></p>
+    <p>The Rompeolas is a kilometer-long bay walk with the picturesque views of the sea and Mt. Bulusan across the bay.
+         Rompeolas is a tidy locale for enjoying strolls and on special occasions, such as concerts,
+         this spot provides tourists with plenty of opportunities to watch and interact with Sorsogueños.</p>
+    <br>
+
+    <img src="images/KID ROMPEOLAS.jpg" alt="">
+    <p></p>
+    <p>If you have kids with you, there is also a playground where kids can enjoy playing and interacting with other kids.</p>
+    <br>
+
+    <img src="images/EATING ROMPEOLAS.jpg" alt="">
+    <p></p>
+    <p>There is also a lot of restaurants nearby where you can enjoy street foods and other merenda meals with friends and family.
+         You can also enjoy eating lunch and dinner in this area.
+
+        Rompeolas gets really crowded with people anticipating the sunset, which is particularly beautiful in this part of the city. 
+        It is also crowded during sunrise, where people exercise to start their day.
+        
+        Rompeolas is one of the tourist spots in Sorsogon you can visit to relax and enjoy yourself. Visit the Rompeolas and see its beauty with your loved ones..</p>
+    <br>
+
+    <h2>SORSOGON COASTAL ROAD</h2>
+    <h5></h5>
+    <img src="images/SORSOGON COASTAL ROAD.jpg" alt="">
+    <p></p>
+    <p>The completed coastal road with rock causeway and three (3) bridges with a total length of 110.70 lineal meter begins at junction Daang Maharlika traversing several barangays of Sirangan, Sampaloc, Balogo 
+        and will eventually connect to barangays Pangpang, Tugos, Cambulaga, and Talisay in Sorsogon City.
+    </p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+
+
